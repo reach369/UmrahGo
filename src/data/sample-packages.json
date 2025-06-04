@@ -1,0 +1,107 @@
+{
+  "status": true,
+  "message": "Packages retrieved successfully",
+  "data": [
+    {
+      "id": 1,
+      "name": "باكج عمرة فاخر - فندق 5 نجوم",
+      "description": "استمتع بتجربة عمرة فاخرة مع إقامة في فندق 5 نجوم على بعد خطوات من الحرم المكي. تشمل الباقة خدمات متميزة ومرشد ديني خاص طوال فترة الإقامة.",
+      "price": "1299.00",
+      "currency": "SAR",
+      "duration_days": 7,
+      "start_location": "مكة",
+      "end_location": "المدينة",
+      "is_featured": true,
+      "office": {
+        "id": 1,
+        "office_name": "مكتب النور للعمرة",
+        "rating": 4.8,
+        "services_offered": "إقامة فندقية 5 نجوم،وجبات كاملة،مرشد ديني،نقل من وإلى المطار"
+      },
+      "images": [
+        {
+          "id": 1,
+          "url": "/images/kaaba.jpg",
+          "is_featured": true
+        },
+        {
+          "id": 2,
+          "url": "/images/kaaba.jpg",
+          "is_featured": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "باكج عمرة اقتصادي",
+      "description": "باقة اقتصادية مناسبة للميزانيات المحدودة مع الحفاظ على جودة الخدمة. إقامة مريحة في فندق 3 نجوم مع جميع الخدمات الأساسية.",
+      "price": "799.00",
+      "currency": "SAR",
+      "duration_days": 5,
+      "start_location": "مكة",
+      "end_location": "المدينة",
+      "is_featured": false,
+      "office": {
+        "id": 1,
+        "office_name": "مكتب النور للعمرة",
+        "rating": 4.8,
+        "services_offered": "إقامة فندقية 3 نجوم،وجبة إفطار،نقل من وإلى المطار"
+      },
+      "images": [
+        {
+          "id": 3,
+          "url": "/images/kaaba.jpg",
+          "is_featured": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "باكج عمرة عائلي",
+      "description": "باقة مصممة خصيصًا للعائلات، توفر الراحة والخصوصية مع أنشطة تناسب جميع أفراد العائلة. غرف واسعة وخدمات إضافية للأطفال.",
+      "price": "999.00",
+      "currency": "SAR",
+      "duration_days": 10,
+      "start_location": "مكة",
+      "end_location": "المدينة",
+      "is_featured": false,
+      "office": {
+        "id": 2,
+        "office_name": "مكتب الإيمان للسياحة الدينية",
+        "rating": 4.6,
+        "services_offered": "إقامة فندقية 4 نجوم،وجبات كاملة،أنشطة عائلية،نقل من وإلى المطار"
+      },
+      "images": [
+        {
+          "id": 4,
+          "url": "/images/kaaba.jpg",
+          "is_featured": true
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "باكج عمرة VIP",
+      "description": "تجربة عمرة فاخرة بامتياز مع خدمات شخصية متكاملة. إقامة في أفضل الفنادق، مرشد خاص، وزيارات للمعالم التاريخية في مكة والمدينة.",
+      "price": "1999.00",
+      "currency": "SAR",
+      "duration_days": 12,
+      "start_location": "مكة",
+      "end_location": "المدينة",
+      "is_featured": true,
+      "office": {
+        "id": 1,
+        "office_name": "مكتب النور للعمرة",
+        "rating": 4.8,
+        "services_offered": "إقامة فندقية 5 نجوم ديلوكس،وجبات فاخرة،مرشد خاص،نقل خاص،زيارة للمعالم"
+      },
+      "images": [
+        {
+          "id": 5,
+          "url": "/images/kaaba.jpg",
+          "is_featured": true
+        }
+      ]
+    }
+  ]
+} 

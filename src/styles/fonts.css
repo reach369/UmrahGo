@@ -1,0 +1,27 @@
+/* Font declarations for Arabic font */
+@font-face {
+  font-family: 'Noto Kufi Arabic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/NotoKufiArabic-Regular.woff2') format('woff2'),
+       url('/fonts/NotoKufiArabic-Regular.woff') format('woff'),
+       url('/fonts/NotoKufiArabic-Regular.ttf') format('truetype');
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-08BD, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+
+@font-face {
+  font-family: 'Noto Kufi Arabic';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/NotoKufiArabic-Bold.woff2') format('woff2'),
+       url('/fonts/NotoKufiArabic-Bold.woff') format('woff'),
+       url('/fonts/NotoKufiArabic-Bold.ttf') format('truetype');
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-08BD, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+
+/* Fallback to system fonts if Noto Kufi Arabic fails to load */
+html[lang="ar"] {
+  font-family: 'Noto Kufi Arabic', 'Segoe UI', Tahoma, sans-serif;
+} 

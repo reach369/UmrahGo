@@ -1,0 +1,273 @@
+umrahgo/
+├── .next/                         # مجلد البناء الخاص بـ Next.js
+│   ├── trace
+│   ├── app-build-manifest.json
+│   ├── build-manifest.json
+│   ├── react-loadable-manifest.json
+│   ├── package.json
+│   ├── static/
+│   ├── types/
+│   ├── server/
+│   └── cache/
+│
+├── .vscode/                       # إعدادات Visual Studio Code
+│   └── settings.json
+│
+├── public/                        # الملفات العامة
+│   ├── images/
+│   ├── person.jpg
+│   ├── file.svg
+│   ├── globe.svg
+│   ├── next.svg
+│   ├── vercel.svg
+│   └── window.svg
+│
+├── messages/                      # ملفات الترجمة
+│   ├── en.json                   # الترجمة الإنجليزية
+│   ├── ar.json                   # الترجمة العربية
+│   └── .DS_Store
+│
+├── src/                          # المصدر الرئيسي للتطبيق
+│   ├── app/                      # مجلد التطبيق الرئيسي
+│   │   ├── page.tsx             # الصفحة الرئيسية
+│   │   ├── globals.css          # الأنماط العامة
+│   │   ├── favicon.ico
+│   │   │
+│   │   └── [locale]/            # التوجيه متعدد اللغات
+│   │       ├── layout.tsx       # التخطيط الرئيسي
+│   │       ├── page.tsx
+│   │       │
+│   │       ├── auth/            # مكونات المصادقة
+│   │       │   ├── register/
+│   │       │   │   ├── page.tsx
+│   │       │   │   ├── office/
+│   │       │   │   │   └── page.tsx
+│   │       │   │   └── pilgrim/
+│   │       │   │       └── page.tsx
+│   │       │   ├── login/
+│   │       │   │   └── page.tsx
+│   │       │   ├── forgot-password/
+│   │       │   │   └── page.tsx
+│   │       │   ├── reset-password/
+│   │       │   │   └── page.tsx
+│   │       │   └── callback/
+│   │       │       └── [provider]/
+│   │       │           └── page.tsx
+│   │       │
+│   │       ├── PilgrimUser/     # واجهة المستخدم الحاج
+│   │       │   ├── layout.tsx
+│   │       │   ├── page.tsx
+│   │       │   │
+│   │       │   ├── components/
+│   │       │   │   ├── BookingHistory.tsx
+│   │       │   │   ├── BookingModal.tsx
+│   │       │   │   ├── NotificationSystem.tsx
+│   │       │   │   ├── OfficeCard.tsx
+│   │       │   │   ├── OfficeDetails.tsx
+│   │       │   │   ├── OfficePackages.tsx
+│   │       │   │   ├── OfficesList.tsx
+│   │       │   │   ├── PackageDetailsModal.tsx
+│   │       │   │   ├── PilgrimBookingForm.tsx
+│   │       │   │   ├── UmrahOfficeCard.tsx
+│   │       │   │   └── UmrahOfficeDetails.tsx
+│   │       │   │
+│   │       │   ├── booking/
+│   │       │   │   └── page.tsx
+│   │       │   │
+│   │       │   ├── notifications/
+│   │       │   │   └── page.tsx
+│   │       │   │
+│   │       │   ├── offices/
+│   │       │   │   └── page.tsx
+│   │       │   │
+│   │       │   ├── packages/
+│   │       │   │   ├── page.tsx
+│   │       │   │   └── [id]/
+│   │       │   │       └── page.tsx
+│   │       │   │
+│   │       │   ├── profile/
+│   │       │   │   ├── page.tsx
+│   │       │   │   ├── edit/
+│   │       │   │   │   └── page.tsx
+│   │       │   │   └── change-password/
+│   │       │   │       └── page.tsx
+│   │       │   │
+│   │       │   ├── redux/
+│   │       │   │   ├── officesApi.ts
+│   │       │   │   └── store.ts
+│   │       │   │
+│   │       │   ├── services/
+│   │       │   │   ├── bookingService.ts
+│   │       │   │   └── officesService.ts
+│   │       │   │
+│   │       │   ├── types/
+│   │       │   │   └── index.ts
+│   │       │   │
+│   │       │   └── utils/
+│   │       │       └── imageUtils.ts
+│   │       │
+│   │       └── umrah-offices/   # واجهة مكاتب العمرة
+│   │           ├── layout.tsx
+│   │           │
+│   │           ├── dashboard/
+│   │           │   ├── layout.tsx
+│   │           │   ├── page.tsx
+│   │           │   │
+│   │           │   ├── add-pilgrim/
+│   │           │   │   └── page.tsx
+│   │           │   │
+│   │           │   ├── bookings/
+│   │           │   │   ├── page.tsx
+│   │           │   │   └── [id]/
+│   │           │   │       └── page.tsx
+│   │           │   │
+│   │           │   ├── campaigns/
+│   │           │   │   ├── page.tsx
+│   │           │   │   └── [id]/
+│   │           │   │       └── page.tsx
+│   │           │   │
+│   │           │   ├── packages/
+│   │           │   │   └── page.tsx
+│   │           │   │
+│   │           │   ├── payments/
+│   │           │   │   └── page.tsx
+│   │           │   │
+│   │           │   ├── profile/
+│   │           │   │   └── page.tsx
+│   │           │   │
+│   │           │   └── transportation-operators/
+│   │           │       ├── page.tsx
+│   │           │       ├── chat/
+│   │           │       │   └── page.tsx
+│   │           │       ├── components/
+│   │           │       │   └── chat/
+│   │           │       │       ├── ChatContainer.tsx
+│   │           │       │       ├── ChatInput.tsx
+│   │           │       │       ├── ChatList.tsx
+│   │           │       │       └── ChatMessage.tsx
+│   │           │       ├── hooks/
+│   │           │       │   └── useChatWebSocket.ts
+│   │           │       ├── redux/
+│   │           │       │   ├── chatApiSlice.ts
+│   │           │       │   ├── chatSlice.ts
+│   │           │       │   ├── mockApi.ts
+│   │           │       │   └── store.ts
+│   │           │       └── types/
+│   │           │           ├── chat.types.ts
+│   │           │           └── mockData.ts
+│   │           │
+│   │           ├── components/
+│   │           │   ├── Sidebar.tsx
+│   │           │   ├── BookingForm.tsx
+│   │           │   ├── Providers.tsx
+│   │           │   ├── DataTable.tsx
+│   │           │   └── layout/
+│   │           │
+│   │           ├── hooks/
+│   │           │   ├── hooks.ts
+│   │           │   ├── useAuthStore.ts
+│   │           │   ├── reduxHooks.ts
+│   │           │   └── useOfficeQuery.ts
+│   │           │
+│   │           ├── redux/
+│   │           │   ├── store.ts
+│   │           │   ├── hooks.ts
+│   │           │   ├── api/
+│   │           │   │   ├── campaignsApiSlice.ts
+│   │           │   │   ├── subscriptionPackagesApiSlice.ts
+│   │           │   │   ├── apiSlice.ts
+│   │           │   │   ├── bookingsApiSlice.ts
+│   │           │   │   ├── transportationApiSlice.ts
+│   │           │   │   ├── index.ts
+│   │           │   │   ├── officesApiSlice.ts
+│   │           │   │   └── paymentsApiSlice.ts
+│   │           │   └── slices/
+│   │           │       ├── exampleSlice.ts
+│   │           │       ├── bookingSlice.ts
+│   │           │       ├── authSlice.ts
+│   │           │       ├── paymentSlice.ts
+│   │           │       ├── campaignSlice.ts
+│   │           │       └── officeSlice.ts
+│   │           │
+│   │           └── utils/
+│   │               ├── mockData.ts
+│   │               ├── dashboardMockData.ts
+│   │               ├── mockBookingsData.ts
+│   │               └── formValidation.ts
+│   │
+│   ├── components/              # المكونات المشتركة
+│   │   ├── ui/                 # مكونات واجهة المستخدم الأساسية
+│   │   │   ├── accordion.tsx
+│   │   │   ├── alert-dialog.tsx
+│   │   │   ├── alert.tsx
+│   │   │   ├── avatar.tsx
+│   │   │   ├── badge.tsx
+│   │   │   ├── button.tsx
+│   │   │   ├── calendar.tsx
+│   │   │   ├── card.tsx
+│   │   │   ├── changlangouge.tsx
+│   │   │   ├── checkbox.tsx
+│   │   │   ├── date-picker.tsx
+│   │   │   ├── dialog.tsx
+│   │   │   ├── dropdown-menu.tsx
+│   │   │   ├── form.tsx
+│   │   │   ├── input.tsx
+│   │   │   ├── label.tsx
+│   │   │   ├── popover.tsx
+│   │   │   ├── radio-group.tsx
+│   │   │   ├── scroll-area.tsx
+│   │   │   ├── select.tsx
+│   │   │   ├── separator.tsx
+│   │   │   ├── skeleton.tsx
+│   │   │   ├── slider.tsx
+│   │   │   ├── status-dialog.tsx
+│   │   │   ├── tabs.tsx
+│   │   │   ├── textarea.tsx
+│   │   │   ├── theme-toggle.tsx
+│   │   │   ├── toast.tsx
+│   │   │   ├── toaster.tsx
+│   │   │   └── use-toast.ts
+│   │   │
+│   │   ├── auth/
+│   │   │   ├── OTPInput.tsx
+│   │   │   ├── SocialLogin.tsx
+│   │   │   └── TestLoginButton.tsx
+│   │   │
+│   │   ├── RegisterOffice.tsx
+│   │   ├── RegisterOperator.tsx
+│   │   ├── header.tsx
+│   │   ├── UserProfile.tsx
+│   │   └── Footer.tsx
+│   │
+│   ├── i18n/                   # الترجمة والتدويل
+│   │   ├── config.ts
+│   │   ├── request.ts
+│   │   ├── navigation.ts
+│   │   └── routing.ts
+│   │
+│   ├── lib/                    # المكتبات والخدمات
+│   │   ├── auth.service.ts
+│   │   ├── axios.ts
+│   │   └── utils.ts
+│   │
+│   ├── services/              # خدمات التطبيق
+│   │   └── auth.ts
+│   │
+│   ├── types/                 # التعريفات النمطية
+│   │   ├── auth.types.ts
+│   │   ├── next-auth.d.ts
+│   │   ├── layout.types.ts
+│   │   ├── components.types.ts
+│   │   └── api.types.ts
+│   │
+│   └── utils/                 # أدوات مساعدة
+│       ├── formatPrice.ts
+│       └── validateEmail.ts
+│
+├── middleware.ts              # ملف الوسيط
+├── next.config.ts            # إعدادات Next.js
+├── package.json              # تبعيات المشروع
+├── tsconfig.json             # إعدادات TypeScript
+├── tailwind.config.js        # إعدادات Tailwind CSS
+└── README.md                 # توثيق المشروع
+```

@@ -1,0 +1,550 @@
+{
+  "app": {
+    "name": "عمرة جو",
+    "description": "رفيقك في رحلة العمرة"
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "packages": "الباقات",
+    "offices": "مكاتب العمرة",
+    "bookings": "الحجوزات",
+    "profile": "الملف الشخصي",
+    "login": "تسجيل الدخول",
+    "register": "حساب جديد",
+    "logout": "تسجيل الخروج",
+    "dashboard": "لوحة التحكم",
+    "howItWorks": "كيف نعمل",
+    "aboutUs": "من نحن",
+    "contact": "اتصل بنا",
+    "myBookings": "حجوزاتي",
+    "settings": "الإعدادات",
+    "about": "عن الشركة",
+    "changelag": "تغيير اللغة",
+    "en": "الإنجليزية",
+    "ar": "العربية"
+  },
+  "auth": {
+    "login": "تسجيل الدخول",
+    "register": "تسجيل حساب جديد",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "resetPassword": "إعادة تعيين كلمة المرور",
+    "verifyAccount": "تأكيد الحساب",
+    "logout": {
+      "success": {
+        "title": "تم تسجيل الخروج بنجاح",
+        "description": "نراك قريباً!"
+      },
+      "error": {
+        "title": "خطأ في تسجيل الخروج",
+        "description": "حدث خطأ أثناء تسجيل الخروج"
+      }
+    }
+  },
+  "packages": {
+    "title": "باقات العمرة",
+    "subtitle": "اختر الباقة المناسبة لك من بين مجموعة متنوعة من الخيارات المميزة",
+    "search": "البحث عن باقات",
+    "searchButton": "بحث",
+    "filter": "تصفية النتائج",
+    "filters": "الفلاتر",
+    "clearFilters": "مسح الفلاتر",
+    "applyFilters": "تطبيق الفلاتر",
+    "sort": "ترتيب حسب",
+    "sortOptions": {
+      "priceLow": "السعر: من الأقل للأعلى",
+      "priceHigh": "السعر: من الأعلى للأقل",
+      "durationAsc": "المدة: من الأقل للأعلى",
+      "durationDesc": "المدة: من الأعلى للأقل",
+      "rating": "التقييم",
+      "recommended": "الموصى بها",
+      "duration": "المدة"
+    },
+    "price": "السعر",
+    "priceRange": "نطاق السعر",
+    "currency": "ريال",
+    "date": "التاريخ",
+    "details": "التفاصيل",
+    "book": "حجز الآن",
+    "viewDetails": "عرض التفاصيل",
+    "amenities": "المميزات",
+    "featured": "مميز",
+    "startingFrom": "يبدأ من",
+    "results": "نتيجة",
+    "days": "أيام",
+    "duration": "المدة",
+    "unknownOffice": "مكتب غير معروف",
+    "bookNow": "احجز الآن",
+    "searchPlaceholder": "ابحث عن باقات العمرة...",
+    "noResults": {
+      "title": "لم يتم العثور على نتائج",
+      "description": "حاول تغيير مصطلحات البحث أو معايير التصفية الخاصة بك"
+    },
+    "subscribe": {
+      "title": "اشترك للحصول على أحدث الباقات والعروض",
+      "description": "ادخل بريدك الإلكتروني للحصول على إشعارات عن العروض الجديدة وأحدث الباقات المتاحة",
+      "emailPlaceholder": "أدخل بريدك الإلكتروني",
+      "button": "اشترك"
+    },
+    "availablePackages": "الباقات المتاحة",
+    "hideFilters": "إخفاء الفلاتر",
+    "showFilters": "عرض الفلاتر",
+    "sortBy": "ترتيب حسب",
+    "selectSort": "اختر الترتيب",
+    "priceLowToHigh": "السعر: من الأقل إلى الأعلى",
+    "priceHighToLow": "السعر: من الأعلى إلى الأقل",
+    "durationShortToLong": "المدة: من الأقصر إلى الأطول",
+    "durationLongToShort": "المدة: من الأطول إلى الأقصر",
+    "highestRated": "أعلى تقييم",
+    "noPackagesFound": "لم يتم العثور على باقات",
+    "tryDifferentFilters": "حاول تغيير الفلاتر أو البحث بمصطلحات مختلفة",
+    "resetFilters": "إعادة ضبط الفلاتر"
+  },
+  "bookings": {
+    "title": "حجوزاتي",
+    "status": "الحالة",
+    "pending": "قيد الانتظار",
+    "confirmed": "مؤكد",
+    "cancelled": "ملغي",
+    "completed": "مكتمل",
+    "bookingId": "رقم الحجز",
+    "bookingDate": "تاريخ الحجز",
+    "packageName": "اسم الباقة",
+    "totalPrice": "السعر الإجمالي",
+    "paymentStatus": "حالة الدفع",
+    "viewDetails": "عرض التفاصيل"
+  },
+  "profile": {
+    "personalInfo": "المعلومات الشخصية",
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "phone": "رقم الهاتف",
+    "address": "العنوان",
+    "changePassword": "تغيير كلمة المرور",
+    "currentPassword": "كلمة المرور الحالية",
+    "newPassword": "كلمة المرور الجديدة",
+    "confirmNewPassword": "تأكيد كلمة المرور الجديدة",
+    "updateProfile": "تحديث الملف الشخصي",
+    "saveChanges": "حفظ التغييرات"
+  },
+  "office": {
+    "dashboard": "لوحة تحكم مكتب العمرة",
+    "packages": "إدارة الباقات",
+    "bookings": "إدارة الحجوزات",
+    "pilgrims": "الحجاج",
+    "addPackage": "إضافة باقة جديدة",
+    "editPackage": "تعديل الباقة",
+    "deletePackage": "حذف الباقة",
+    "campaigns": "الحملات",
+    "gallery": "معرض الصور",
+    "payments": "المدفوعات",
+    "statistics": "الإحصائيات",
+    "about": "عن المكتب",
+    "address": "العنوان",
+    "contact": "معلومات الاتصال",
+    "email": "البريد الإلكتروني",
+    "license": "رقم الترخيص",
+    "viewPackages": "عرض جميع باقات المكتب",
+    "noDescription": "لا يوجد وصف متاح لهذا المكتب",
+    "notAvailable": "غير متوفر",
+    "error": {
+      "title": "حدث خطأ",
+      "description": "لم نتمكن من العثور على تفاصيل المكتب المطلوب"
+    },
+    "backToOffices": "العودة إلى مكاتب العمرة"
+  },
+  "common": {
+    "search": "بحث",
+    "filter": "تصفية",
+    "sort": "ترتيب",
+    "add": "إضافة",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    "submit": "إرسال",
+    "loading": "جار التحميل...",
+    "noResults": "لا توجد نتائج",
+    "error": "حدث خطأ",
+    "success": "تمت العملية بنجاح",
+    "close": "إغلاق",
+    "back": "رجوع",
+    "next": "التالي",
+    "previous": "السابق",
+    "view": "عرض",
+    "details": "التفاصيل",
+    "quickLinks": "روابط سريعة",
+    "support": "الدعم",
+    "contactUs": "تواصل معنا",
+    "faq": "الأسئلة الشائعة",
+    "terms": "الشروط والأحكام",
+    "privacy": "سياسة الخصوصية",
+    "contact": "تواصل معنا",
+    "allRightsReserved": "جميع الحقوق محفوظة",
+    "currency": "ريال",
+    "home": "الرئيسية",
+    "about": "عن الشركة"
+  },
+  "footer": {
+    "description": "نقدم خدمات العمرة المتكاملة بأعلى معايير الجودة والراحة لضمان رحلة روحانية مميزة",
+    "quickLinks": "روابط سريعة",
+    "legal": "قانوني",
+    "termsOfService": "شروط الخدمة",
+    "privacyPolicy": "سياسة الخصوصية",
+    "cookiePolicy": "سياسة ملفات تعريف الارتباط",
+    "licenseAgreement": "اتفاقية الترخيص",
+    "contactUs": "اتصل بنا",
+    "address": "شارع الملك فهد، الرياض، المملكة العربية السعودية",
+    "allRightsReserved": "جميع الحقوق محفوظة",
+    "newsletter": {
+      "title": "اشترك في النشرة الإخبارية",
+      "description": "احصل على آخر العروض والتحديثات حول باقات العمرة مباشرة إلى بريدك الإلكتروني",
+      "placeholder": "أدخل بريدك الإلكتروني",
+      "button": "اشترك"
+    },
+    "madeWith": "صنع بكل حب"
+  },
+  "home": {
+    "hero": {
+      "title": "رحلة العمرة سهلة وميسرة مع عمرة جو",
+      "subtitle": "منصة متكاملة تساعدك على حجز رحلة العمرة بكل سهولة ويسر مع أفضل مكاتب العمرة المعتمدة",
+      "browsePackages": "تصفح باقات العمرة",
+      "howItWorks": "كيف يعمل",
+      "findOffices": "البحث عن مكاتب العمرة"
+    },
+    "features": {
+      "title": "لماذا تختار عمرة جو؟",
+      "subtitle": "نقدم خدمات متميزة تضمن لك رحلة عمرة مريحة وخالية من المتاعب"
+    },
+    "featuredPackages": {
+      "title": "باقات العمرة المميزة",
+      "subtitle": "اختر من بين أفضل باقات العمرة المميزة لدينا والتي توفر لك تجربة روحانية متكاملة",
+      "viewAll": "عرض جميع الباقات"
+    },
+    "featuredOffices": {
+      "title": "مكاتب العمرة المميزة",
+      "subtitle": "تعرف على أفضل مكاتب العمرة المعتمدة في المملكة لتجربة روحانية لا تُنسى",
+      "viewAll": "عرض جميع المكاتب",
+      "viewDetails": "عرض التفاصيل"
+    },
+    "packages": {
+      "title": "باقات العمرة المميزة",
+      "subtitle": "اختر من بين باقاتنا المتنوعة التي تناسب احتياجاتك وميزانيتك",
+      "viewAll": "عرض جميع الباقات",
+      "viewDetails": "عرض التفاصيل"
+    },
+    "offices": {
+      "title": "مكاتب العمرة المعتمدة",
+      "subtitle": "تعرف على أفضل مكاتب العمرة الموثوقة",
+      "viewAll": "عرض جميع المكاتب",
+      "viewDetails": "عرض التفاصيل"
+    },
+    "howItWorks": {
+      "title": "كيف يعمل عمرة جو؟",
+      "subtitle": "عملية بسيطة وسلسة من البداية حتى النهاية",
+      "learnMore": "تعرف على المزيد"
+    },
+    "faq": {
+      "title": "الأسئلة الشائعة",
+      "subtitle": "إجابات على الأسئلة الأكثر شيوعاً حول العمرة والحجز"
+    },
+    "testimonials": {
+      "title": "آراء عملائنا",
+      "subtitle": "اقرأ ما يقوله العملاء عن تجربتهم مع عمرة جو"
+    },
+    "cta": {
+      "title": "جاهز لبدء رحلة العمرة الخاصة بك؟",
+      "subtitle": "احجز الآن واستمتع بتجربة عمرة لا تُنسى مع فريقنا المحترف",
+      "browsePackages": "استعرض الباقات",
+      "register": "التسجيل كمعتمر",
+      "findOffices": "البحث عن مكاتب العمرة"
+    }
+  },
+  "landing": {
+    "hero": {
+      "title": "سهّل رحلتك للعمرة",
+      "subtitle": "احجز باقات العمرة الخاصة بك بسهولة وأمان",
+      "cta": "استكشف الباقات"
+    },
+    "features": {
+      "title": "لماذا تختار عمرة جو",
+      "subtitle": "نجعل رحلتك الروحانية بسيطة وخالية من المتاعب",
+      "feature1": {
+        "title": "مكاتب عمرة موثقة",
+        "description": "جميع مقدمي خدمات العمرة على منصتنا معتمدون ومرخصون"
+      },
+      "feature2": {
+        "title": "حجز آمن",
+        "description": "مدفوعاتك ومعلوماتك الشخصية محمية بأعلى معايير الأمان"
+      },
+      "feature3": {
+        "title": "دعم على مدار الساعة",
+        "description": "فريق دعم العملاء لدينا متاح على مدار الساعة لمساعدتك"
+      },
+      "feature4": {
+        "title": "خيارات مرنة",
+        "description": "اختر من بين مجموعة متنوعة من الباقات لتناسب احتياجاتك وميزانيتك"
+      }
+    },
+    "howItWorks": {
+      "title": "كيف يعمل",
+      "subtitle": "خطوات بسيطة لحجز رحلة العمرة",
+      "step1": {
+        "title": "تصفح الباقات",
+        "description": "استكشف مختلف باقات العمرة التي تقدمها المكاتب الموثقة"
+      },
+      "step2": {
+        "title": "اختر الباقة",
+        "description": "اختر الباقة التي تناسب تفضيلاتك وميزانيتك"
+      },
+      "step3": {
+        "title": "احجز وادفع",
+        "description": "أكمل حجزك باستخدام خيارات دفع آمنة"
+      },
+      "step4": {
+        "title": "سافر بدون قلق",
+        "description": "استمتع برحلتك الروحانية مع الدعم الكامل طوال الرحلة"
+      }
+    },
+    "testimonials": {
+      "title": "ماذا يقول حجاجنا",
+      "subtitle": "اسمع من الذين وثقوا بنا لرحلة العمرة الخاصة بهم",
+      "viewAll": "عرض جميع التقييمات"
+    },
+    "cta": {
+      "title": "هل أنت مستعد لبدء رحلة العمرة؟",
+      "subtitle": "انضم إلى آلاف الحجاج الذين وثقوا بعمرة جو لرحلتهم الروحانية",
+      "button": "ابدأ اليوم"
+    },
+    "home": {
+      "hero": {
+        "title": "تجربة عمرة لا تُنسى مع UmrahGo",
+        "subtitle": "نقدم خدمات العمرة المتكاملة بأعلى معايير الجودة والراحة لضمان رحلة روحانية مميزة",
+        "browsePackages": "استعرض الباقات",
+        "howItWorks": "كيف يعمل"
+      },
+      "features": {
+        "title": "لماذا تختار UmrahGo؟",
+        "subtitle": "نقدم خدمات متميزة تضمن لك رحلة عمرة مريحة وخالية من المتاعب"
+      },
+      "packages": {
+        "title": "باقات العمرة المميزة",
+        "subtitle": "اختر من بين باقاتنا المتنوعة التي تناسب احتياجاتك وميزانيتك",
+        "viewAll": "عرض جميع الباقات",
+        "viewDetails": "عرض التفاصيل"
+      },
+      "offices": {
+        "title": "مكاتب العمرة المعتمدة",
+        "subtitle": "تعرف على أفضل مكاتب العمرة الموثوقة",
+        "viewAll": "عرض جميع المكاتب",
+        "viewDetails": "عرض التفاصيل"
+      },
+      "howItWorks": {
+        "title": "كيف يعمل UmrahGo؟",
+        "subtitle": "عملية بسيطة وسلسة من البداية حتى النهاية",
+        "learnMore": "تعرف على المزيد"
+      },
+      "testimonials": {
+        "title": "آراء عملائنا",
+        "subtitle": "اقرأ ما يقوله العملاء عن تجربتهم مع UmrahGo"
+      }
+    }
+  },
+  "offices": {
+    "title": "مكاتب العمرة المعتمدة",
+    "subtitle": "استكشف أفضل مكاتب العمرة المعتمدة في المملكة واختر المكتب المناسب لرحلتك الروحانية",
+    "search": "ابحث عن مكاتب العمرة...",
+    "searchButton": "بحث",
+    "filters": "الفلاتر",
+    "clearFilters": "مسح الفلاتر",
+    "applyFilters": "تطبيق الفلاتر",
+    "ratingFilter": "التقييم",
+    "cityFilter": "المدينة",
+    "selectCity": "اختر المدينة",
+    "sort": "ترتيب حسب",
+    "sortOptions": {
+      "rating": "التقييم",
+      "nameAsc": "الاسم: أ-ي",
+      "nameDesc": "الاسم: ي-أ"
+    },
+    "results": "نتيجة",
+    "featured": "مميز",
+    "noDescription": "لا يوجد وصف متاح",
+    "viewDetails": "عرض التفاصيل",
+    "noResults": {
+      "title": "لم يتم العثور على نتائج",
+      "description": "حاول تغيير معايير البحث أو التصفية الخاصة بك"
+    },
+    "reviews": "تقييم",
+    "verified": "معتمد",
+    "pending": "قيد المراجعة",
+    "rejected": "مرفوض",
+    "contact": "تواصل معنا",
+    "viewPackages": "عرض باقات المكتب",
+    "tabs": {
+      "about": "عن المكتب",
+      "services": "الخدمات",
+      "licenses": "التراخيص"
+    },
+    "aboutTitle": "نبذة عن المكتب",
+    "servicesTitle": "الخدمات المقدمة",
+    "noServices": "لا توجد معلومات عن الخدمات المقدمة.",
+    "licensesTitle": "التراخيص والاعتمادات",
+    "licenseNumber": "رقم الترخيص",
+    "commercialRegister": "السجل التجاري",
+    "licenseExpiry": "تاريخ انتهاء الترخيص",
+    "verificationStatus": "حالة التحقق",
+    "contactInfo": "معلومات التواصل",
+    "address": "العنوان",
+    "phone": "الهاتف",
+    "email": "البريد الإلكتروني",
+    "website": "الموقع الإلكتروني",
+    "quickInfo": "معلومات سريعة",
+    "established": "تأسس",
+    "rating": "التقييم",
+    "reviews": "التقييمات",
+    "licenseValid": "الترخيص ساري حتى",
+    "browsePackages": "تصفح باقات المكتب",
+    "notFound": {
+      "title": "المكتب غير موجود",
+      "description": "عذراً، المكتب الذي تبحث عنه غير موجود أو تم حذفه"
+    },
+    "backToOffices": "العودة إلى صفحة المكاتب"
+  },
+  "terms": {
+    "contact": {
+      "title": "الاتصال بنا",
+      "content": "إذا كان لديك أي أسئلة حول هذه الشروط والأحكام، يرجى الاتصال بنا على البريد الإلكتروني: info@umrahgo.com أو من خلال نموذج الاتصال على موقعنا."
+    },
+    "contactUs": "تواصل معنا للاستفسارات"
+  },
+  "pilgrim": {
+    "packages": {
+      "title": "باقات العمرة",
+      "subtitle": "اكتشف أفضل باقات العمرة المناسبة لاحتياجاتك",
+      "filters": "تصفية النتائج",
+      "searchPlaceholder": "ابحث عن باقات...",
+      "priceRange": "نطاق السعر",
+      "duration": "مدة الباقة",
+      "selectDuration": "اختر المدة",
+      "allDurations": "كل المدد",
+      "includes": "الباقة تشمل",
+      "includesTransport": "المواصلات",
+      "includesAccommodation": "الإقامة",
+      "includesMeals": "الوجبات",
+      "includesGuide": "المرشد",
+      "resetFilters": "إعادة ضبط",
+      "noResults": "لا توجد باقات متاحة",
+      "tryDifferentFilters": "جرب معايير بحث مختلفة أو تواصل معنا للحصول على المساعدة",
+      "clearFilters": "مسح الفلاتر",
+      "showingResults": "عرض {count} باقة",
+      "sortBy": "ترتيب حسب",
+      "sortNewest": "الأحدث",
+      "sortPriceAsc": "السعر: من الأقل للأعلى",
+      "sortPriceDesc": "السعر: من الأعلى للأقل",
+      "sortDuration": "المدة"
+    }
+  },
+  "umrahOffices": "مكاتب العمرة",
+  "dashboard": "لوحة التحكم",
+  "officeManagement": "إدارة المكتب",
+  "campaigns": "الحملات",
+  "bookings": "الحجوزات",
+  "payments": "المدفوعات",
+  "packages": "الباقات",
+  "busOperators": "مشغلي الحافلات",
+  "addPilgrim": "إضافة معتمر",
+  "busManagement": "إدارة الحافلات",
+  "registerNewAccount": "تسجيل حساب جديد",
+  "manageBusesAndPrices": "إدارة الحافلات والأسعار",
+  "bookingsAndCommissions": "الحجوزات والعمولات",
+  "premiumPackages": "الباقات المميزة",
+  "chats": "المحادثات",
+  "settings": "الإعدادات",
+  "changeTheme": "تغيير السمة",
+  "logout": "تسجيل الخروج",
+  "loading": "جاري التحميل...",
+  "days": "أيام",
+  "subscribe": "اشترك",
+  "subscriptionPackages": "باقات الاشتراك",
+  "subscriptionPackagesDescription": "اختر الباقة المناسبة لك",
+  "changelag": "تغيير اللغة",
+  "en": "الإنجليزية",
+  "ar": "العربية",
+  "packages": {
+    "title": "باقات العمرة",
+    "subtitle": "اكتشف أفضل باقات العمرة المناسبة لاحتياجاتك",
+    "filters": "تصفية النتائج",
+    "searchPlaceholder": "ابحث عن باقات...",
+    "priceRange": "نطاق السعر",
+    "duration": "مدة الباقة",
+    "selectDuration": "اختر المدة",
+    "allDurations": "كل المدد",
+    "includes": "الباقة تشمل",
+    "includesTransport": "المواصلات",
+    "includesAccommodation": "الإقامة",
+    "includesMeals": "الوجبات",
+    "includesGuide": "المرشد",
+    "resetFilters": "إعادة ضبط",
+    "noResults": "لا توجد باقات متاحة",
+    "tryDifferentFilters": "جرب معايير بحث مختلفة أو تواصل معنا للحصول على المساعدة",
+    "clearFilters": "مسح الفلاتر",
+    "showingResults": "عرض {count} باقة",
+    "sortBy": "ترتيب حسب",
+    "sortNewest": "الأحدث",
+    "sortPriceAsc": "السعر: من الأقل للأعلى",
+    "sortPriceDesc": "السعر: من الأعلى للأقل",
+    "sortDuration": "المدة"
+  },
+  "package": {
+    "loading": "جاري تحميل تفاصيل الباقة...",
+    "error": {
+      "title": "حدث خطأ",
+      "description": "لم نتمكن من العثور على تفاصيل الباقة المطلوبة"
+    },
+    "backToPackages": "العودة إلى الباقات",
+    "featured": "باقة مميزة",
+    "tabs": {
+      "overview": "نظرة عامة",
+      "itinerary": "البرنامج",
+      "amenities": "المميزات",
+      "gallery": "الصور"
+    },
+    "overview": {
+      "title": "نبذة عن الباقة",
+      "duration": "المدة",
+      "location": "الموقع",
+      "price": "السعر",
+      "rating": "التقييم"
+    },
+    "booking": {
+      "title": "حجز الباقة",
+      "cta": "احجز الآن",
+      "price": "السعر",
+      "duration": "المدة",
+      "location": "الموقع",
+      "rating": "التقييم",
+      "bookNow": "احجز الآن",
+      "contactUs": "تواصل معنا للاستفسار",
+      "assistance": "هل تحتاج إلى مساعدة؟",
+      "assistanceText": "تواصل معنا للحصول على مساعدة في اختيار الباقة المناسبة أو لأي استفسارات أخرى"
+    },
+    "itinerary": {
+      "title": "برنامج الرحلة",
+      "day": "اليوم {day}"
+    },
+    "amenities": {
+      "title": "المميزات والخدمات"
+    },
+    "gallery": {
+      "title": "معرض الصور"
+    },
+    "related": {
+      "title": "باقات أخرى قد تعجبك",
+      "description": "استكشف المزيد من باقات العمرة المميزة لدينا واختر ما يناسبك",
+      "viewDetails": "عرض التفاصيل"
+    }
+  }
+} 

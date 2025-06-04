@@ -1,0 +1,525 @@
+{
+  "app": {
+    "name": "UmrahGo",
+    "description": "Your companion for Umrah journey"
+  },
+  "nav": {
+    "home": "Home",
+    "packages": "Packages",
+    "offices": "Umrah Offices",
+    "bookings": "Bookings",
+    "profile": "Profile",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "dashboard": "Dashboard",
+    "howItWorks": "How It Works",
+    "aboutUs": "About Us",
+    "contact": "Contact Us",
+    "myBookings": "My Bookings",
+    "settings": "Settings",
+    "about": "About Us",
+    "changelag": "Change Language",
+    "en": "English",
+    "ar": "Arabic"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "forgotPassword": "Forgot Password?",
+    "resetPassword": "Reset Password",
+    "verifyAccount": "Verify Account",
+    "logout": {
+      "success": {
+        "title": "Logged Out Successfully",
+        "description": "See you soon!"
+      },
+      "error": {
+        "title": "Logout Error",
+        "description": "There was an error logging out"
+      }
+    }
+  },
+  "packages": {
+    "title": "Umrah Packages",
+    "subtitle": "Choose the right package for you from a variety of excellent options",
+    "search": "Search packages",
+    "searchButton": "Search",
+    "filter": "Filter",
+    "filters": "Filters",
+    "clearFilters": "Clear Filters",
+    "applyFilters": "Apply Filters",
+    "sort": "Sort",
+    "sortOptions": {
+      "priceLow": "Price: Low to High",
+      "priceHigh": "Price: High to Low",
+      "durationAsc": "Duration: Short to Long",
+      "durationDesc": "Duration: Long to Short",
+      "rating": "Rating",
+      "recommended": "Recommended",
+      "duration": "Duration"
+    },
+    "price": "Price",
+    "priceRange": "Price Range",
+    "currency": "SAR",
+    "date": "Date",
+    "details": "Details",
+    "book": "Book Now",
+    "viewDetails": "View Details",
+    "amenities": "Amenities",
+    "featured": "Featured",
+    "startingFrom": "Starting from",
+    "results": "results",
+    "days": "days",
+    "duration": "Duration",
+    "unknownOffice": "Unknown Office",
+    "bookNow": "Book Now",
+    "searchPlaceholder": "Search Umrah packages...",
+    "noResults": {
+      "title": "No results found",
+      "description": "Try changing your search terms or filter criteria"
+    },
+    "subscribe": {
+      "title": "Subscribe to Latest Packages and Offers",
+      "description": "Enter your email to get notifications about new offers and latest packages",
+      "emailPlaceholder": "Enter your email",
+      "button": "Subscribe"
+    },
+    "availablePackages": "Available Packages",
+    "hideFilters": "Hide Filters",
+    "showFilters": "Show Filters",
+    "sortBy": "Sort by",
+    "selectSort": "Select sorting",
+    "priceLowToHigh": "Price: Low to High",
+    "priceHighToLow": "Price: High to Low",
+    "durationShortToLong": "Duration: Short to Long",
+    "durationLongToShort": "Duration: Long to Short",
+    "highestRated": "Highest Rated",
+    "noPackagesFound": "No packages found",
+    "tryDifferentFilters": "Try changing filters or search terms",
+    "resetFilters": "Reset Filters"
+  },
+  "offices": {
+    "title": "Certified Umrah Offices",
+    "subtitle": "Explore the best certified Umrah offices in the Kingdom and choose the right office for your spiritual journey",
+    "search": "Search Umrah offices...",
+    "searchButton": "Search",
+    "filters": "Filters",
+    "clearFilters": "Clear Filters",
+    "applyFilters": "Apply Filters",
+    "ratingFilter": "Rating",
+    "cityFilter": "City",
+    "selectCity": "Select City",
+    "sort": "Sort by",
+    "sortOptions": {
+      "rating": "Rating",
+      "nameAsc": "Name: A-Z",
+      "nameDesc": "Name: Z-A"
+    },
+    "results": "results",
+    "featured": "Featured",
+    "noDescription": "No description available",
+    "viewDetails": "View Details",
+    "noResults": {
+      "title": "No results found",
+      "description": "Try changing your search or filter criteria"
+    },
+    "reviews": "reviews",
+    "verified": "Verified",
+    "pending": "Pending Review",
+    "rejected": "Rejected",
+    "contact": "Contact Us",
+    "viewPackages": "View Office Packages",
+    "tabs": {
+      "about": "About Office",
+      "services": "Services",
+      "licenses": "Licenses"
+    },
+    "aboutTitle": "About the Office",
+    "servicesTitle": "Services Provided",
+    "noServices": "No information about provided services.",
+    "licensesTitle": "Licenses and Certifications",
+    "licenseNumber": "License Number",
+    "commercialRegister": "Commercial Register",
+    "licenseExpiry": "License Expiry Date",
+    "verificationStatus": "Verification Status",
+    "contactInfo": "Contact Information",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "website": "Website",
+    "quickInfo": "Quick Information",
+    "established": "Established",
+    "rating": "Rating",
+    "reviews": "Reviews",
+    "licenseValid": "License Valid Until",
+    "browsePackages": "Browse Office Packages",
+    "notFound": {
+      "title": "Office Not Found",
+      "description": "Sorry, the office you are looking for does not exist or has been removed"
+    },
+    "backToOffices": "Back to Offices Page"
+  },
+  "bookings": {
+    "title": "My Bookings",
+    "status": "Status",
+    "pending": "Pending",
+    "confirmed": "Confirmed",
+    "cancelled": "Cancelled",
+    "completed": "Completed",
+    "bookingId": "Booking ID",
+    "bookingDate": "Booking Date",
+    "packageName": "Package Name",
+    "totalPrice": "Total Price",
+    "paymentStatus": "Payment Status",
+    "viewDetails": "View Details"
+  },
+  "profile": {
+    "personalInfo": "Personal Information",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "changePassword": "Change Password",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "confirmNewPassword": "Confirm New Password",
+    "updateProfile": "Update Profile",
+    "saveChanges": "Save Changes"
+  },
+  "office": {
+    "dashboard": "Umrah Office Dashboard",
+    "packages": "Manage Packages",
+    "bookings": "Manage Bookings",
+    "pilgrims": "Pilgrims",
+    "addPackage": "Add New Package",
+    "editPackage": "Edit Package",
+    "deletePackage": "Delete Package",
+    "campaigns": "Campaigns",
+    "gallery": "Gallery",
+    "payments": "Payments",
+    "statistics": "Statistics",
+    "about": "About Office",
+    "address": "Address",
+    "contact": "Contact Information",
+    "email": "Email",
+    "license": "License Number",
+    "viewPackages": "View All Office Packages",
+    "noDescription": "No description available for this office",
+    "notAvailable": "Not Available",
+    "error": {
+      "title": "An error occurred",
+      "description": "We couldn't find the requested office details"
+    },
+    "backToOffices": "Back to Umrah Offices"
+  },
+  "common": {
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "save": "Save",
+    "submit": "Submit",
+    "loading": "Loading...",
+    "noResults": "No Results",
+    "error": "Error",
+    "success": "Success",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "view": "View",
+    "details": "Details",
+    "quickLinks": "Quick Links",
+    "support": "Support",
+    "contactUs": "Contact Us",
+    "faq": "FAQ",
+    "terms": "Terms and Conditions",
+    "privacy": "Privacy Policy",
+    "contact": "Contact Us",
+    "allRightsReserved": "All Rights Reserved",
+    "currency": "SAR",
+    "home": "Home",
+    "about": "About Us"
+  },
+  "footer": {
+    "description": "We provide integrated Umrah services with the highest standards of quality and comfort to ensure a distinctive spiritual journey",
+    "quickLinks": "Quick Links",
+    "legal": "Legal",
+    "termsOfService": "Terms of Service",
+    "privacyPolicy": "Privacy Policy",
+    "cookiePolicy": "Cookie Policy",
+    "licenseAgreement": "License Agreement",
+    "contactUs": "Contact Us",
+    "address": "King Fahd Road, Riyadh, Saudi Arabia",
+    "allRightsReserved": "All Rights Reserved",
+    "newsletter": {
+      "title": "Subscribe to Newsletter",
+      "description": "Get the latest offers and updates about Umrah packages directly to your email",
+      "placeholder": "Enter your email",
+      "button": "Subscribe"
+    },
+    "madeWith": "Made with love"
+  },
+  "home": {
+    "hero": {
+      "title": "Easy and Convenient Umrah Journey with UmrahGo",
+      "subtitle": "An integrated platform that helps you book your Umrah trip with ease through the best certified Umrah offices",
+      "browsePackages": "Browse Umrah Packages",
+      "howItWorks": "How It Works",
+      "findOffices": "Find Umrah Offices"
+    },
+    "features": {
+      "title": "Why Choose UmrahGo?",
+      "subtitle": "We provide distinguished services that ensure a comfortable and hassle-free Umrah journey"
+    },
+    "featuredPackages": {
+      "title": "Featured Umrah Packages",
+      "subtitle": "Choose from our best featured Umrah packages that provide you with a complete spiritual experience",
+      "viewAll": "View All Packages"
+    },
+    "featuredOffices": {
+      "title": "Featured Umrah Offices",
+      "subtitle": "Discover the best certified Umrah offices in the Kingdom for an unforgettable spiritual experience",
+      "viewAll": "View All Offices",
+      "viewDetails": "View Details"
+    },
+    "packages": {
+      "title": "Featured Umrah Packages",
+      "subtitle": "Choose from our diverse packages that suit your needs and budget",
+      "viewAll": "View All Packages",
+      "viewDetails": "View Details"
+    },
+    "offices": {
+      "title": "Certified Umrah Offices",
+      "subtitle": "Discover the best trusted Umrah offices",
+      "viewAll": "View All Offices",
+      "viewDetails": "View Details"
+    },
+    "howItWorks": {
+      "title": "How Does UmrahGo Work?",
+      "subtitle": "A simple and smooth process from start to finish",
+      "learnMore": "Learn More"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Answers to the most common questions about Umrah and booking"
+    },
+    "testimonials": {
+      "title": "Customer Reviews",
+      "subtitle": "Read what customers say about their experience with UmrahGo"
+    },
+    "cta": {
+      "title": "Ready to Start Your Umrah Journey?",
+      "subtitle": "Book now and enjoy an unforgettable Umrah experience with our professional team",
+      "browsePackages": "Browse Packages",
+      "register": "Register as Pilgrim",
+      "findOffices": "Find Umrah Offices"
+    }
+  },
+  "landing": {
+    "hero": {
+      "title": "Simplify Your Umrah Journey",
+      "subtitle": "Book your Umrah packages easily and securely",
+      "cta": "Explore Packages"
+    },
+    "features": {
+      "title": "Why Choose UmrahGo",
+      "subtitle": "We make your spiritual journey simple and hassle-free",
+      "feature1": {
+        "title": "Verified Umrah Offices",
+        "description": "All Umrah service providers on our platform are certified and licensed"
+      },
+      "feature2": {
+        "title": "Secure Booking",
+        "description": "Your payments and personal information are protected with highest security standards"
+      },
+      "feature3": {
+        "title": "24/7 Support",
+        "description": "Our customer support team is available 24/7 to assist you"
+      },
+      "feature4": {
+        "title": "Flexible Options",
+        "description": "Choose from a variety of packages to suit your needs and budget"
+      }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "subtitle": "Simple steps to book your Umrah journey",
+      "step1": {
+        "title": "Browse Packages",
+        "description": "Explore various Umrah packages offered by verified offices"
+      },
+      "step2": {
+        "title": "Choose Package",
+        "description": "Select the package that suits your preferences and budget"
+      },
+      "step3": {
+        "title": "Book and Pay",
+        "description": "Complete your booking using secure payment options"
+      },
+      "step4": {
+        "title": "Travel Worry-Free",
+        "description": "Enjoy your spiritual journey with full support throughout the trip"
+      }
+    },
+    "testimonials": {
+      "title": "What Our Pilgrims Say",
+      "subtitle": "Hear from those who trusted us for their Umrah journey",
+      "viewAll": "View All Reviews"
+    },
+    "cta": {
+      "title": "Ready to Start Your Umrah Journey?",
+      "subtitle": "Join thousands of pilgrims who trusted UmrahGo for their spiritual journey",
+      "button": "Start Today"
+    },
+    "home": {
+      "hero": {
+        "title": "Unforgettable Umrah Experience with UmrahGo",
+        "subtitle": "We provide integrated Umrah services with the highest standards of quality and comfort to ensure a distinctive spiritual journey",
+        "browsePackages": "Browse Packages",
+        "howItWorks": "How It Works"
+      },
+      "features": {
+        "title": "Why Choose UmrahGo?",
+        "subtitle": "We provide distinguished services that ensure a comfortable and hassle-free Umrah journey"
+      },
+      "packages": {
+        "title": "Featured Umrah Packages",
+        "subtitle": "Choose from our diverse packages that suit your needs and budget",
+        "viewAll": "View All Packages",
+        "viewDetails": "View Details"
+      },
+      "offices": {
+        "title": "Certified Umrah Offices",
+        "subtitle": "Discover the best trusted Umrah offices",
+        "viewAll": "View All Offices",
+        "viewDetails": "View Details"
+      },
+      "howItWorks": {
+        "title": "How Does UmrahGo Work?",
+        "subtitle": "A simple and smooth process from start to finish",
+        "learnMore": "Learn More"
+      },
+      "testimonials": {
+        "title": "Customer Reviews",
+        "subtitle": "Read what customers say about their experience with UmrahGo"
+      }
+    }
+  },
+  "terms": {
+    "contact": {
+      "title": "Contact Us",
+      "content": "If you have any questions about these Terms and Conditions, please contact us at email: info@umrahgo.com or through the contact form on our website."
+    },
+    "contactUs": "Contact Us for Inquiries"
+  },
+  "pilgrim": {
+    "packages": {
+      "title": "Umrah Packages",
+      "subtitle": "Discover the best Umrah packages suitable for your needs",
+      "filters": "Filter Results",
+      "searchPlaceholder": "Search packages...",
+      "priceRange": "Price Range",
+      "duration": "Package Duration",
+      "selectDuration": "Select Duration",
+      "allDurations": "All Durations",
+      "includes": "Package Includes",
+      "includesTransport": "Transportation",
+      "includesAccommodation": "Accommodation",
+      "includesMeals": "Meals",
+      "includesGuide": "Guide",
+      "resetFilters": "Reset",
+      "noResults": "No packages available",
+      "tryDifferentFilters": "Try different search criteria or contact us for assistance",
+      "clearFilters": "Clear Filters",
+      "showingResults": "Showing {count} packages",
+      "sortBy": "Sort by",
+      "sortNewest": "Newest",
+      "sortPriceAsc": "Price: Low to High",
+      "sortPriceDesc": "Price: High to Low",
+      "sortDuration": "Duration"
+    }
+  },
+  "umrahOffices": "Umrah Offices",
+  "dashboard": "Dashboard",
+  "officeManagement": "Office Management",
+  "campaigns": "Campaigns",
+  "bookings": "Bookings",
+  "payments": "Payments",
+  "packages": "Packages",
+  "busOperators": "Bus Operators",
+  "addPilgrim": "Add Pilgrim",
+  "busManagement": "Bus Management",
+  "registerNewAccount": "Register New Account",
+  "manageBusesAndPrices": "Manage Buses & Prices",
+  "bookingsAndCommissions": "Bookings & Commissions",
+  "premiumPackages": "Premium Packages",
+  "chats": "Chats",
+  "settings": "Settings",
+  "changeTheme": "Change Theme",
+  "logout": "Logout",
+  "loading": "Loading...",
+  "days": "days",
+  "subscribe": "Subscribe",
+  "subscriptionPackages": "Subscription Packages",
+  "subscriptionPackagesDescription": "Choose the package that suits you",
+  "changelag": "Change Language",
+  "en": "English",
+  "ar": "Arabic",
+  "package": {
+    "loading": "Loading package details...",
+    "error": {
+      "title": "An error occurred",
+      "description": "We couldn't find the requested package details"
+    },
+    "backToPackages": "Back to Packages",
+    "featured": "Featured Package",
+    "tabs": {
+      "overview": "Overview",
+      "itinerary": "Itinerary",
+      "amenities": "Amenities",
+      "gallery": "Gallery"
+    },
+    "overview": {
+      "title": "Package Overview",
+      "duration": "Duration",
+      "location": "Location",
+      "price": "Price",
+      "rating": "Rating"
+    },
+    "booking": {
+      "title": "Book Package",
+      "cta": "Book Now",
+      "price": "Price",
+      "duration": "Duration",
+      "location": "Location",
+      "rating": "Rating",
+      "bookNow": "Book Now",
+      "contactUs": "Contact for Inquiry",
+      "assistance": "Need Assistance?",
+      "assistanceText": "Contact us for help in choosing the right package or for any other inquiries"
+    },
+    "itinerary": {
+      "title": "Trip Itinerary",
+      "day": "Day {day}"
+    },
+    "amenities": {
+      "title": "Amenities & Services"
+    },
+    "gallery": {
+      "title": "Photo Gallery"
+    },
+    "related": {
+      "title": "Other Packages You Might Like",
+      "description": "Explore more of our featured Umrah packages and choose what suits you",
+      "viewDetails": "View Details"
+    }
+  }
+} 

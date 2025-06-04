@@ -1,26 +1,180 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import '../styles/theme.css';
+@import '../styles/fonts.css';
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
+  /* تحول سلس للثيمات */
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    color-scheme: light;
+  }
+  
+  :root.dark {
+    color-scheme: dark;
+  }
+  
+  html {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+  
+  html.theme-transition,
+  html.theme-transition *,
+  html.theme-transition *::before,
+  html.theme-transition *::after {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+  }
+  
+  * {
+    @apply border-default;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  
+  /* تنسيقات الخطوط العربية */
+  @font-face {
+    font-family: 'Noto Kufi Arabic';
+    src: url('/fonts/NotoKufiArabic-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Noto Kufi Arabic';
+    src: url('/fonts/NotoKufiArabic-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  /* تطبيق الخطوط حسب اللغة */
+  :root[dir="rtl"] {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+  }
+  
+  :root[dir="ltr"] {
+    font-family: var(--font-sans), sans-serif;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  /* أزرار بتدرجات لونية */
+  .btn-gradient-primary {
+    @apply bg-gradient-primary text-primary-foreground hover:shadow-lg transition-all duration-300;
+  }
+  
+  .btn-gradient-gold {
+    @apply bg-gradient-gold text-primary-foreground hover:shadow-lg transition-all duration-300;
+  }
+  
+  /* بطاقات بتأثيرات */
+  .card-hover {
+    @apply bg-background rounded-xl p-6 border border-default shadow-sm hover:shadow-md transition-all duration-300;
+  }
+  
+  .card-gradient {
+    @apply bg-gradient-to-br from-primary/10 via-primary/5 to-background;
+  }
+  
+  /* بطاقات جديدة */
+  .card-elegant {
+    @apply bg-background rounded-xl border border-default overflow-hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s var(--ease-out);
+  }
+  
+  .card-elegant:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-color: rgba(var(--primary), 0.3);
+  }
+  
+  .card-elegant.dark {
+    background: linear-gradient(to bottom, var(--color-gray-900), var(--color-gray-950));
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-color: rgba(var(--primary), 0.2);
+  }
+  
+  /* أزرار احترافية - تحديث ألوان الذهبي */
+  .btn-modern {
+    @apply relative overflow-hidden rounded-lg px-6 py-3 font-medium transition-all duration-300;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-primary-dark));
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-modern::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transform: translateX(-100%);
+  }
+  
+  .btn-modern:hover {
+    box-shadow: 0 6px 15px rgba(212, 175, 55, 0.3);
+    transform: translateY(-2px);
+  }
+  
+  .btn-modern:hover::before {
+    transform: translateX(100%);
+    transition: transform 1s ease;
+  }
+  
+  /* تأثيرات جديدة للون الذهبي */
+  .gold-shimmer {
+    background: linear-gradient(90deg, 
+      rgba(212, 175, 55, 0.8), 
+      rgba(223, 198, 97, 0.9), 
+      rgba(212, 175, 55, 0.8)
+    );
+    background-size: 200% 100%;
+    animation: goldShimmer 3s infinite;
+  }
+  
+  @keyframes goldShimmer {
+    0% { background-position: 100% 0; }
+    100% { background-position: -100% 0; }
+  }
+  
+  /* تنسيق خاص لبعض العناصر المهمة */
+  .gold-border {
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.1);
+  }
+  
+  .gold-text {
+    background: linear-gradient(135deg, #D4AF37, #DFC661);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+}
+
+/* تنسيقات إضافية */
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.ltr {
+  direction: ltr;
+  text-align: left;
+}
+
+/* تأثيرات خاصة للصور */
+.gold-filter {
+  filter: sepia(20%) hue-rotate(10deg) saturate(150%);
+}
+
+/* تأثير انتقالي عند التحويل بين اللغات */
+.lang-transition {
+  transition: all 0.5s ease-in-out;
 }
