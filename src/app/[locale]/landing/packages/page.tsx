@@ -68,8 +68,8 @@ export default function PackagesPage() {
     setLoading(true);
     try {
       const filters = {
-        min_price: priceRange[0],
-        max_price: priceRange[1],
+          min_price: priceRange[0],
+          max_price: priceRange[1],
         per_page: 50,
         page: 1
       };
@@ -399,7 +399,7 @@ export default function PackagesPage() {
                           <div className="bg-white/90 px-3 py-1 rounded-full">
                             <span className="text-sm font-bold text-primary">
                               {typeof pkg.price === 'string' ? parseFloat(pkg.price).toLocaleString() : (pkg.price || 0).toLocaleString()} {t('common.currency') || 'ريال'}
-                            </span>
+                                </span>
                           </div>
                         </div>
                       </div>

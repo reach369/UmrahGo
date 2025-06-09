@@ -81,8 +81,8 @@ export async function searchOfficesWithFilters(filters: {
   city?: string;
   min_rating?: number;
   is_featured?: boolean;
-  per_page?: number;
-  page?: number;
+    per_page?: number;
+    page?: number;
 }) {
   try {
     // Construir os parâmetros de consulta
@@ -142,7 +142,7 @@ function processOfficeData(office: any): Office {
       }))
     : [];
     
-  return {
+        return {
     id: office.id,
     user_id: office.user_id,
     office_name: office.office_name || '',
@@ -198,8 +198,8 @@ export async function fetchOfficeById(officeId: string) {
       
       if (data && data.status === true && data.data) {
         // Processar dados do escritório
-        return { 
-          status: true, 
+        return {
+          status: true,
           data: processOfficeData(data.data)
         };
       }
@@ -223,7 +223,7 @@ export async function fetchOfficeById(officeId: string) {
 
 // Criar um objeto Office de fallback para quando a API não estiver disponível
 function createFallbackOffice(officeId: string): Office {
-  return {
+        return {
     id: parseInt(officeId),
     user_id: 0,
     office_name: 'Office Name',
@@ -261,7 +261,7 @@ function createFallbackOffice(officeId: string): Office {
     verified_at: null,
     is_active: true,
     deleted_at: null,
-    created_at: new Date().toISOString(),
+          created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
     services: ['Umrah packages', 'Transportation', 'Accommodation']
   };
@@ -325,12 +325,12 @@ export interface Package {
 export async function searchPackagesWithFilters(filters: {
   keyword?: string;
   office_id?: string;
-  min_price?: number;
-  max_price?: number;
+    min_price?: number;
+    max_price?: number;
   min_rating?: number;
   is_featured?: boolean;
-  per_page?: number;
-  page?: number;
+    per_page?: number;
+    page?: number;
 }) {
   try {
     // Construir os parâmetros de consulta
@@ -405,7 +405,7 @@ export async function searchPackagesWithFilters(filters: {
         office_logo: getValidImageUrl(pkg.office_logo)
       }));
       
-      return {
+        return {
         packages,
         pagination: {
           total: data.data.total || packages.length,
@@ -578,8 +578,8 @@ export async function fetchFeaturedOffices(limit = 6) {
       per_page: limit
     });
     
-    return {
-      status: true,
+        return {
+          status: true,
       data: response.offices
     };
   } catch (error) {
@@ -605,11 +605,11 @@ export async function fetchTopRatedOffices(limit = 6) {
     
     // Ordenar por avaliação em ordem decrescente
     const sortedOffices = [...response.offices].sort((a, b) => (b.rating || 0) - (a.rating || 0));
-    
-    return {
+      
+      return {
       status: true,
       data: sortedOffices
-    };
+      };
   } catch (error) {
     console.error('Error fetching top rated offices:', error);
     return {
@@ -642,7 +642,7 @@ export async function fetchFeaturedPackages(limit = 6) {
     };
   } catch (error) {
     console.error('Error fetching featured packages:', error);
-    return {
+  return {
       status: false,
       data: [
         createFallbackPackage('1'),

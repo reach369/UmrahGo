@@ -202,7 +202,7 @@ export default function PilgrimPackagesPage() {
         setLoading(false);
       }
     };
-    
+
     getPackages();
   }, []);
 
@@ -228,8 +228,8 @@ export default function PilgrimPackagesPage() {
         <p className="text-muted-foreground">
           {t('pilgrim.packages.subtitle') || 'اكتشف أفضل باقات العمرة المناسبة لاحتياجاتك'}
         </p>
-      </div>
-      
+        </div>
+        
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
         {/* فلاتر البحث */}
         <div className="bg-card p-6 rounded-xl border shadow-sm">
@@ -242,11 +242,11 @@ export default function PilgrimPackagesPage() {
           <div className="mb-6">
             <div className="relative">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-              <Input
+            <Input
                 type="text"
                 placeholder={t('pilgrim.packages.searchPlaceholder') || 'ابحث عن باقات...'}
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
                 className="pl-10"
               />
             </div>
@@ -257,7 +257,7 @@ export default function PilgrimPackagesPage() {
           {/* نطاق السعر */}
           <div className="mb-6">
             <h3 className="text-sm font-medium mb-4">{t('pilgrim.packages.priceRange') || 'نطاق السعر'}</h3>
-            <Slider
+              <Slider
               defaultValue={priceRange}
               min={0}
               max={10000}
@@ -333,7 +333,7 @@ export default function PilgrimPackagesPage() {
                   }
                 />
                 <Label htmlFor="meals">{t('pilgrim.packages.includesMeals') || 'الوجبات'}</Label>
-              </div>
+          </div>
               <div className="flex items-center space-x-2 rtl:space-x-reverse">
                 <Checkbox 
                   id="guide" 
@@ -343,8 +343,8 @@ export default function PilgrimPackagesPage() {
                   }
                 />
                 <Label htmlFor="guide">{t('pilgrim.packages.includesGuide') || 'المرشد'}</Label>
-              </div>
-            </div>
+          </div>
+        </div>
           </div>
           
           <Separator className="my-5" />
@@ -386,7 +386,7 @@ export default function PilgrimPackagesPage() {
               <p className="text-muted-foreground mb-6">
                 {t('pilgrim.packages.tryDifferentFilters') || 'جرب معايير بحث مختلفة أو تواصل معنا للحصول على المساعدة'}
               </p>
-              <Button
+            <Button 
                 onClick={() => {
                   setSearchTerm('');
                   setPriceRange([0, 10000]);
@@ -400,7 +400,7 @@ export default function PilgrimPackagesPage() {
                 }}
               >
                 {t('pilgrim.packages.clearFilters') || 'مسح الفلاتر'}
-              </Button>
+            </Button>
             </div>
           ) : (
             // قائمة الباقات
@@ -421,7 +421,7 @@ export default function PilgrimPackagesPage() {
                     <SelectItem value="duration">{t('pilgrim.packages.sortDuration') || 'المدة'}</SelectItem>
                   </SelectContent>
                 </Select>
-              </div>
+            </div>
               
               <motion.div 
                 className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6"

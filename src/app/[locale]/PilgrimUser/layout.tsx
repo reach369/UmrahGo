@@ -52,14 +52,14 @@ export default function PilgrimLayout({ children }: PilgrimLayoutProps) {
         {/* Main Content */}
         <main className="flex-1 container mx-auto px-4 py-6">
           {user?.id && <NotificationSystem userId={user.id.toString()} />}
-          {children}
-        </main>
+        {children}
+      </main>
       </div>
       
       <Separator className="my-6" />
       
       <footer className="container mx-auto px-4 py-6 text-center text-sm text-muted-foreground">
-        &copy; {new Date().getFullYear()} UmrahGo - جميع الحقوق محفوظة
+          &copy; {new Date().getFullYear()} UmrahGo - جميع الحقوق محفوظة
       </footer>
     </div>
   );

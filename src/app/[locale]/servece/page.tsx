@@ -1,6 +1,7 @@
 import Link from 'next/link';
+import { Metadata } from 'next';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Our Services',
   description: 'Choose the service you want to provide',
 };

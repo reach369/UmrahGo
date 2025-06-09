@@ -2,6 +2,7 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { ThemeProvider } from '@/components/theme-provider';
+import { Metadata } from 'next';
 
 // Styles
 import '../globals.css';
@@ -9,6 +10,14 @@ import '../../styles/fonts.css';
 // Fonts
 import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
+
+export const metadata: Metadata = {
+  title: {
+    default: 'UmrahGo - خدمات العمرة الميسرة',
+    template: '%s | UmrahGo'
+  },
+  description: 'منصة UmrahGo توفر حلول العمرة المتكاملة بطريقة سهلة وميسرة',
+};
 
 export function generateStaticParams() {
   return [{ locale: 'ar' }, { locale: 'en' }];
