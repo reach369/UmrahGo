@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "vercel-build": "next build",
     "start": "next start",
     "lint": "next lint",
     "generate-translations": "node scripts/generate-translations.js",
@@ -74,5 +75,8 @@
     "tailwindcss": "^4.1.8",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

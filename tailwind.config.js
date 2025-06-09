@@ -69,7 +69,7 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ['var(--font-sans)', 'sans-serif'],
+        sans: ['Noto Kufi Arabic', 'sans-serif'],
         arabic: ['Noto Kufi Arabic', 'sans-serif'],
       },
       backgroundImage: {

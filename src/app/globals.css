@@ -36,28 +36,13 @@
     @apply bg-background text-foreground antialiased;
   }
   
-  /* تنسيقات الخطوط العربية */
-  @font-face {
-    font-family: 'Noto Kufi Arabic';
-    src: url('/fonts/NotoKufiArabic-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Noto Kufi Arabic';
-    src: url('/fonts/NotoKufiArabic-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-  }
-  
   /* تطبيق الخطوط حسب اللغة */
-  :root[dir="rtl"] {
+  :root[dir="rtl"], .rtl {
     font-family: 'Noto Kufi Arabic', sans-serif;
   }
   
-  :root[dir="ltr"] {
-    font-family: var(--font-sans), sans-serif;
+  :root[dir="ltr"], .ltr {
+    font-family: 'Noto Kufi Arabic', sans-serif;
   }
 }
 

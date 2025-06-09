@@ -7,9 +7,6 @@ import { Metadata } from 'next';
 // Styles
 import '../globals.css';
 import '../../styles/fonts.css';
-// Fonts
-import { Inter } from 'next/font/google';
-const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
 export const metadata: Metadata = {
   title: {
@@ -44,12 +41,16 @@ export default async function LocaleLayout({
   }
 
   return (
-    <div className={locale === 'ar' ? 'rtl' : 'ltr'} data-locale={locale}>
-      <ThemeProvider>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
-        </NextIntlClientProvider>
-      </ThemeProvider>
-    </div>
+    <html lang={locale} className={locale === 'ar' ? 'rtl' : 'ltr'}>
+      <body>
+        <div data-locale={locale}>
+          <ThemeProvider>
+            <NextIntlClientProvider locale={locale} messages={messages}>
+              {children}
+            </NextIntlClientProvider>
+          </ThemeProvider>
+        </div>
+      </body>
+    </html>
   );
 }

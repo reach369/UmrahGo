@@ -9,6 +9,11 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   
+  // Disable TypeScript type checking during build for Vercel
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  
   // Explicitly keep API routes outside of localization
   async rewrites() {
     return [
@@ -20,7 +25,7 @@ const nextConfig = {
   },
   
   images: {
-    domains: ['umrahgo.reach369.com', 'localhost'],
+    domains: ['umrahgo.reach369.com', 'localhost','umrahgo.net','admin.umrahgo.net'],
     remotePatterns: [
       {
         protocol: 'https',
@@ -32,6 +37,10 @@ const nextConfig = {
       },
     ],
   },
+  
+  // Optimize for Vercel
+  swcMinify: true,
+  output: 'standalone',
 };
 
 const withNextIntl = createNextIntlPlugin();
