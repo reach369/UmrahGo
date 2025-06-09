@@ -39,7 +39,6 @@ const nextConfig = {
   },
   
   // Optimize for Vercel
-  swcMinify: true,
   output: 'standalone',
 };
 
