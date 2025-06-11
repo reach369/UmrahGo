@@ -1,6 +1,6 @@
 'use client';
 
-import { PilgrimBookingForm } from '@/app/[locale]/PilgrimUser/components/PilgrimBookingForm';
+import { PilgrimBookingForm } from '../components/PilgrimBookingForm';
 import { Toaster } from 'sonner';
 
 export default function BookingPage() {
