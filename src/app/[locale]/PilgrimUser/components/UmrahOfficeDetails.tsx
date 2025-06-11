@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Office } from '../services/officesService';
-import { OfficePackages } from './OfficePackages';
+import { OfficePackages } from '@/app/[locale]/PilgrimUser/components/OfficePackages';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { getImageUrl } from '../utils/imageUtils';
 

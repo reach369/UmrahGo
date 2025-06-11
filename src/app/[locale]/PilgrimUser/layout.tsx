@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
 import UnifiedHeader from '@/components/ui/unified-header';
 import Sidebar from '@/components/ui/sidebar';
-import { NotificationSystem } from './components/NotificationSystem';
+import { NotificationSystem } from '@/app/[locale]/PilgrimUser/components/NotificationSystem';
 import { Separator } from '@/components/ui/separator';
 import { UserDetails } from '@/types/auth.types';
 

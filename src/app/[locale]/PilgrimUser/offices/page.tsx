@@ -10,7 +10,7 @@ import { Skeleton } from '@/components/ui/skeleton';
 import { Slider } from '@/components/ui/slider';
 import { Badge } from '@/components/ui/badge';
 import { UmrahOfficeCard } from '../components/UmrahOfficeCard';
-import { UmrahOfficeDetails } from '../components/UmrahOfficeDetails';
+import { UmrahOfficeDetails } from '@/app/[locale]/PilgrimUser/components/UmrahOfficeDetails';
 import { 
   fetchOffices, 
   fetchFeaturedOffices, 
