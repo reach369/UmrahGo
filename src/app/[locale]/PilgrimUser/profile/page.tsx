@@ -6,7 +6,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
 import { authService } from '@/lib/auth.service';
-import BookingHistory from '../components/BookingHistory';
+import BookingHistory from '@/app/[locale]/PilgrimUser/components/BookingHistory';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
