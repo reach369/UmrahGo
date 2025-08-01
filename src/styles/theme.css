@@ -1,0 +1,86 @@
+:root {
+  /* الألوان الأساسية - Light Mode */
+  --background: 255 255 255;
+  --foreground: 17 24 39;
+  --card: 255 255 255;
+  --card-foreground: 17 24 39;
+  --popover: 255 255 255;
+  --popover-foreground: 17 24 39;
+  --primary: 212 175 55; /* #D4AF37 - Gold */
+  --primary-foreground: 255 255 255;
+  --primary-light: 223 198 97; /* #DFC661 - Light Gold */
+  --primary-dark: 191 157 50; /* #BF9D32 - Dark Gold */
+  --secondary: 14 102 82; /* #0E6652 - Dark Green */
+  --secondary-foreground: 255 255 255;
+  --muted: 241 245 249;
+  --muted-foreground: 75 85 99;
+  --accent: 212 175 55;
+  --accent-foreground: 17 24 39;
+  --destructive: 220 38 38;
+  --destructive-foreground: 255 255 255;
+  --border: 229 231 235;
+  --input: 255 255 255;
+  --ring: 212 175 55;
+  --radius: 0.5rem;
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, rgb(212 175 55) 0%, rgb(191 157 50) 100%);
+  --gradient-gold: linear-gradient(135deg, rgb(223 198 97) 0%, rgb(212 175 55) 100%);
+}
+
+.dark {
+  --background: 17 24 39;
+  --foreground: 255 255 255;
+  --card: 30 41 59;
+  --card-foreground: 255 255 255;
+  --popover: 30 41 59;
+  --popover-foreground: 255 255 255;
+  --primary: 223 198 97; /* Lighter gold for dark mode */
+  --primary-foreground: 17 24 39;
+  --primary-light: 235 220 130;
+  --primary-dark: 191 157 50;
+  --secondary: 51 153 127; /* Lighter green for dark mode */
+  --secondary-foreground: 255 255 255;
+  --muted: 51 65 85;
+  --muted-foreground: 209 213 219;
+  --accent: 223 198 97;
+  --accent-foreground: 17 24 39;
+  --destructive: 220 38 38;
+  --destructive-foreground: 255 255 255;
+  --border: 51 65 85;
+  --input: 51 65 85;
+  --ring: 223 198 97;
+
+  /* Update gradients for dark mode */
+  --gradient-primary: linear-gradient(135deg, rgb(223 198 97) 0%, rgb(191 157 50) 100%);
+  --gradient-gold: linear-gradient(135deg, rgb(235 220 130) 0%, rgb(223 198 97) 100%);
+}
+
+/* Utility classes */
+@layer utilities {
+  .bg-gradient-primary {
+    background-image: var(--gradient-primary);
+  }
+
+  .bg-gradient-gold {
+    background-image: var(--gradient-gold);
+  }
+
+  .text-gradient-primary {
+    background-image: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-gold {
+    background-image: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .border-default {
+    border-color: hsl(var(--border));
+  }
+}
