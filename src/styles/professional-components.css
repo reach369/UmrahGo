@@ -1,0 +1,673 @@
+/* ==========================================
+   UmrahGo Professional Components
+   ========================================== */
+
+@layer components {
+  /* Professional Button Components - Enhanced Performance */
+  .btn-professional {
+    @apply relative overflow-hidden rounded-lg px-6 py-3 font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+    transform: translateZ(0); /* Hardware acceleration */
+    will-change: transform, box-shadow;
+    backface-visibility: hidden;
+    perspective: 1000px;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .btn-professional-primary {
+    @apply btn-professional bg-gradient-to-r from-primary to-primary-dark text-primary-foreground shadow-lg hover:shadow-xl focus:ring-primary;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+  }
+  
+  .btn-professional-primary:hover {
+    @apply scale-105;
+    box-shadow: 0 10px 40px hsl(var(--primary) / 0.3);
+    transform: translateZ(0) scale(1.05);
+  }
+  
+  .btn-professional-secondary {
+    @apply btn-professional bg-gradient-to-r from-secondary to-secondary-dark text-secondary-foreground shadow-lg hover:shadow-xl focus:ring-secondary;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .btn-professional-secondary:hover {
+    @apply scale-105;
+    box-shadow: 0 10px 40px hsl(var(--secondary) / 0.3);
+  }
+  
+  .btn-professional-outline {
+    @apply btn-professional border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground focus:ring-primary;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .btn-professional-outline:hover {
+    @apply scale-105;
+    box-shadow: 0 5px 20px hsl(var(--primary) / 0.2);
+  }
+  
+  .btn-professional-ghost {
+    @apply btn-professional text-primary hover:bg-primary/10 focus:ring-primary;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .btn-professional-ghost:hover {
+    @apply scale-105;
+  }
+  
+  /* Professional Input Components */
+  .input-professional {
+    @apply w-full rounded-lg border-2 border-border bg-background px-4 py-3 text-foreground placeholder-muted-foreground;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: border-color, box-shadow;
+  }
+  
+  .input-professional:focus {
+    @apply border-primary outline-none ring-2 ring-primary/20 shadow-md;
+  }
+  
+  .input-professional-error {
+    @apply border-destructive focus:border-destructive focus:ring-destructive/20;
+  }
+  
+  .input-professional-success {
+    @apply border-success focus:border-success focus:ring-success/20;
+  }
+  
+  /* Professional Card Components */
+  .card-professional {
+    @apply rounded-xl border border-border bg-card p-6 shadow-lg;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform, box-shadow;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+  
+  .card-professional:hover {
+    @apply shadow-xl;
+  }
+  
+  .card-professional-hover {
+    @apply card-professional;
+  }
+  
+  .card-professional-hover:hover {
+    @apply border-primary shadow-primary/10;
+    transform: translateY(-2px);
+  }
+  
+  .card-professional-interactive {
+    @apply card-professional cursor-pointer;
+  }
+  
+  .card-professional-interactive:hover {
+    @apply border-primary shadow-primary/20;
+    transform: translateY(-4px) scale(1.02);
+  }
+  
+  .card-professional-interactive:active {
+    transform: translateY(-2px) scale(1.01);
+  }
+  
+  .card-professional-glass {
+    @apply card-professional backdrop-blur-sm bg-background/80 border-white/20;
+  }
+  
+  /* Professional Badge Components */
+  .badge-professional {
+    @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-medium;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+  }
+  
+  .badge-professional:hover {
+    @apply scale-105;
+  }
+  
+  .badge-professional-primary {
+    @apply badge-professional bg-primary text-primary-foreground;
+  }
+  
+  .badge-professional-secondary {
+    @apply badge-professional bg-secondary text-secondary-foreground;
+  }
+  
+  .badge-professional-success {
+    @apply badge-professional bg-success text-success-foreground;
+  }
+  
+  .badge-professional-warning {
+    @apply badge-professional bg-warning text-warning-foreground;
+  }
+  
+  .badge-professional-error {
+    @apply badge-professional bg-destructive text-destructive-foreground;
+  }
+  
+  .badge-professional-outline {
+    @apply badge-professional border border-border bg-transparent text-foreground;
+  }
+  
+  /* Professional Alert Components */
+  .alert-professional {
+    @apply rounded-lg border p-4 shadow-sm;
+    animation: slideInUp 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .alert-professional-success {
+    @apply alert-professional border-success/20 bg-success/10 text-success-foreground;
+  }
+  
+  .alert-professional-warning {
+    @apply alert-professional border-warning/20 bg-warning/10 text-warning-foreground;
+  }
+  
+  .alert-professional-error {
+    @apply alert-professional border-destructive/20 bg-destructive/10 text-destructive-foreground;
+  }
+  
+  .alert-professional-info {
+    @apply alert-professional border-info/20 bg-info/10 text-info-foreground;
+  }
+  
+  /* Professional Navigation Components */
+  .nav-professional {
+    @apply flex items-center space-x-1 rounded-lg bg-muted p-1;
+  }
+  
+  .nav-professional-item {
+    @apply rounded-md px-3 py-2 text-sm font-medium text-muted-foreground;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: background-color, color;
+  }
+  
+  .nav-professional-item:hover {
+    @apply bg-background text-foreground;
+  }
+  
+  .nav-professional-item-active {
+    @apply nav-professional-item bg-background text-foreground shadow-sm;
+  }
+  
+  /* Professional Table Components */
+  .table-professional {
+    @apply w-full border-collapse rounded-lg border border-border bg-card shadow-sm;
+  }
+  
+  .table-professional th {
+    @apply border-b border-border bg-muted px-6 py-4 text-left text-xs font-medium uppercase tracking-wider text-muted-foreground;
+  }
+  
+  .table-professional td {
+    @apply border-b border-border px-6 py-4 text-sm text-foreground;
+    transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .table-professional tr:hover td {
+    @apply bg-muted/50;
+  }
+  
+  /* Professional Modal Components */
+  .modal-professional {
+    @apply fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm;
+    animation: fadeIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .modal-professional-content {
+    @apply relative max-h-[90vh] max-w-lg rounded-xl border border-border bg-card p-6 shadow-xl;
+    animation: scaleIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .modal-professional-header {
+    @apply mb-4 flex items-center justify-between;
+  }
+  
+  .modal-professional-title {
+    @apply text-lg font-semibold text-foreground;
+  }
+  
+  .modal-professional-close {
+    @apply rounded-md p-1 text-muted-foreground hover:bg-muted hover:text-foreground;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  /* Professional Form Components */
+  .form-professional {
+    @apply space-y-6;
+  }
+  
+  .form-professional-group {
+    @apply space-y-2;
+  }
+  
+  .form-professional-label {
+    @apply text-sm font-medium text-foreground;
+  }
+  
+  .form-professional-error {
+    @apply text-xs text-destructive;
+    animation: slideInUp 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .form-professional-help {
+    @apply text-xs text-muted-foreground;
+  }
+  
+  /* Professional Loading Components */
+  .loading-professional {
+    @apply inline-flex items-center justify-center;
+  }
+  
+  .loading-professional-spinner {
+    @apply h-4 w-4 animate-spin rounded-full border-2 border-primary border-t-transparent;
+    animation: spin 1s linear infinite;
+  }
+  
+  .loading-professional-dots {
+    @apply flex space-x-1;
+  }
+  
+  .loading-professional-dot {
+    @apply h-2 w-2 rounded-full bg-primary;
+    animation: bounce 1.4s ease-in-out infinite both;
+  }
+  
+  .loading-professional-dot:nth-child(1) {
+    animation-delay: -0.32s;
+  }
+  
+  .loading-professional-dot:nth-child(2) {
+    animation-delay: -0.16s;
+  }
+  
+  .loading-professional-dot:nth-child(3) {
+    animation-delay: 0s;
+  }
+  
+  /* Professional Skeleton Components */
+  .skeleton-professional {
+    @apply bg-muted rounded;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .skeleton-professional-text {
+    @apply skeleton-professional h-4 w-full;
+  }
+  
+  .skeleton-professional-title {
+    @apply skeleton-professional h-6 w-3/4;
+  }
+  
+  .skeleton-professional-avatar {
+    @apply skeleton-professional h-10 w-10 rounded-full;
+  }
+  
+  .skeleton-professional-button {
+    @apply skeleton-professional h-10 w-24 rounded-lg;
+  }
+  
+  /* Professional Separator Components */
+  .separator-professional {
+    @apply border-t border-border;
+  }
+  
+  .separator-professional-vertical {
+    @apply border-l border-border;
+  }
+  
+  .separator-professional-gradient {
+    @apply h-px bg-gradient-to-r from-transparent via-border to-transparent;
+  }
+  
+  /* Professional Tooltip Components */
+  .tooltip-professional {
+    @apply rounded-md bg-popover px-3 py-2 text-sm text-popover-foreground shadow-md;
+    animation: slideInUp 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .tooltip-professional-arrow {
+    @apply absolute h-2 w-2 rotate-45 bg-popover;
+  }
+  
+  /* Professional Progress Components */
+  .progress-professional {
+    @apply h-2 w-full overflow-hidden rounded-full bg-muted;
+  }
+  
+  .progress-professional-bar {
+    @apply h-full bg-primary;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .progress-professional-indeterminate {
+    @apply progress-professional-bar;
+    animation: indeterminateProgress 2s ease-in-out infinite;
+  }
+  
+  /* Professional Switch Components */
+  .switch-professional {
+    @apply relative inline-flex h-6 w-11 items-center rounded-full bg-muted focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+    transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .switch-professional-checked {
+    @apply bg-primary;
+  }
+  
+  .switch-professional-thumb {
+    @apply inline-block h-4 w-4 rounded-full  shadow-lg;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .switch-professional-thumb-checked {
+    @apply translate-x-6;
+  }
+  
+  /* Professional Accordion Components */
+  .accordion-professional {
+    @apply divide-y divide-border rounded-lg border border-border;
+  }
+  
+  .accordion-professional-item {
+    @apply bg-card;
+  }
+  
+  .accordion-professional-trigger {
+    @apply flex w-full items-center justify-between px-6 py-4 text-left font-medium text-foreground;
+    transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .accordion-professional-trigger:hover {
+    @apply bg-muted;
+  }
+  
+  .accordion-professional-content {
+    @apply px-6 pb-4 text-sm text-muted-foreground;
+    animation: slideInUp 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  /* Professional Dropdown Components */
+  .dropdown-professional {
+    @apply relative inline-block text-left;
+  }
+  
+  .dropdown-professional-menu {
+    @apply absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-lg border border-border bg-popover shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none;
+    animation: scaleIn 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .dropdown-professional-item {
+    @apply block px-4 py-2 text-sm text-popover-foreground;
+    transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .dropdown-professional-item:hover {
+    @apply bg-muted;
+  }
+  
+  .dropdown-professional-divider {
+    @apply my-1 h-px bg-border;
+  }
+}
+
+/* ==========================================
+   Professional Animations
+   ========================================== */
+
+@layer utilities {
+  /* Animation Classes */
+  .animate-fade-in {
+    animation: fadeIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .animate-fade-out {
+    animation: fadeOut 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .animate-slide-in-up {
+    animation: slideInUp 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .animate-slide-in-down {
+    animation: slideInDown 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .animate-slide-in-left {
+    animation: slideInLeft 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .animate-slide-in-right {
+    animation: slideInRight 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .animate-scale-in {
+    animation: scaleIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .animate-scale-out {
+    animation: scaleOut 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .animate-bounce-subtle {
+    animation: bounceSubtle 1s ease-in-out infinite;
+  }
+  
+  .animate-shimmer {
+    animation: shimmer 2s ease-in-out infinite;
+  }
+  
+  /* Keyframes */
+  @keyframes fadeIn {
+    from { 
+      opacity: 0;
+      transform: translateZ(0) translateY(10px);
+    }
+    to { 
+      opacity: 1;
+      transform: translateZ(0) translateY(0);
+    }
+  }
+  
+  @keyframes fadeOut {
+    from { 
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to { 
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes slideInUp {
+    from { 
+      opacity: 0;
+      transform: translateZ(0) translateY(20px);
+    }
+    to { 
+      opacity: 1;
+      transform: translateZ(0) translateY(0);
+    }
+  }
+  
+  @keyframes slideInDown {
+    from { 
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to { 
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from { 
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to { 
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from { 
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to { 
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes scaleIn {
+    from { 
+      opacity: 0;
+      transform: translateZ(0) scale(0.95);
+    }
+    to { 
+      opacity: 1;
+      transform: translateZ(0) scale(1);
+    }
+  }
+  
+  @keyframes scaleOut {
+    from { 
+      opacity: 1;
+      transform: scale(1);
+    }
+    to { 
+      opacity: 0;
+      transform: scale(0.95);
+    }
+  }
+  
+  @keyframes glow {
+    from { 
+      box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+    }
+    to { 
+      box-shadow: 0 0 30px hsl(var(--primary) / 0.5);
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes bounceSubtle {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 80%, 100% {
+      transform: scale(0);
+    }
+    40% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes indeterminateProgress {
+    0% {
+      transform: translateX(-200%);
+    }
+    50% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(200%);
+    }
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .loading-professional-spinner {
+    animation: none !important;
+  }
+  
+  .loading-professional-dot {
+    animation: none !important;
+  }
+  
+  .skeleton-professional {
+    animation: none !important;
+  }
+  
+  .animate-glow {
+    animation: none !important;
+  }
+  
+  .animate-float {
+    animation: none !important;
+  }
+  
+  .animate-bounce-subtle {
+    animation: none !important;
+  }
+  
+  .animate-shimmer {
+    animation: none !important;
+  }
+  
+  .progress-professional-indeterminate {
+    animation: none !important;
+  }
+} 

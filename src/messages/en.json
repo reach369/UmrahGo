@@ -1,0 +1,59 @@
+{
+  "notifications": {
+    "title": "Notifications",
+    "description": "View and manage your notifications",
+    "all": "All Notifications",
+    "totalNotifications": "Total: {count} notifications",
+    "unreadNotifications": "{count} unread",
+    "markAsRead": "Mark as Read",
+    "markAllAsRead": "Mark All as Read",
+    "deleteAll": "Delete All",
+    "delete": "Delete",
+    "unread": "Unread",
+    "viewDetails": "View Details",
+    "noNotifications": "No Notifications",
+    "noNotificationsDescription": "You don't have any notifications yet",
+    "error": "Failed to load notifications",
+    "retry": "Retry",
+    "recentNotifications": "Recent Notifications",
+    "viewAll": "View All",
+    "search": "Search notifications...",
+    "pagination": "Showing {from} to {to} of {total_items} notifications",
+    "filters": {
+      "all": "All",
+      "unread": "Unread",
+      "system": "System",
+      "booking": "Booking",
+      "payment": "Payment",
+      "chat": "Chat"
+    },
+    "priority": {
+      "low": "Low",
+      "normal": "Normal",
+      "high": "High",
+      "urgent": "Urgent"
+    },
+    "sort": {
+      "sortBy": "Sort by",
+      "newest": "Newest First",
+      "oldest": "Oldest First",
+      "priority": "Priority"
+    },
+    "settings": {
+      "title": "Notification Settings",
+      "save": "Save Settings",
+      "enable": "Enable Notifications",
+      "sound": "Sound Notifications",
+      "desktop": "Desktop Notifications",
+      "pushNotifications": "Push Notifications",
+      "emailNotifications": "Email Notifications",
+      "categories": {
+        "title": "Notification Categories",
+        "system": "System Notifications",
+        "booking": "Booking Updates",
+        "payment": "Payment Updates",
+        "chat": "Chat Messages"
+      }
+    }
+  }
+} 
